@@ -1,5 +1,6 @@
 import * as React from 'react';
 import type { Metadata } from 'next';
+import ChatGPTBot from '@/components/ChatGPTBot';
 
 import { config } from '@/config';
 import { GuestGuard } from '@/components/auth/guest-guard';
@@ -13,6 +14,7 @@ export default function Page(): React.JSX.Element {
     <Layout>
       <GuestGuard>
         <SignInForm />
+        <ChatGPTBot />
       </GuestGuard>
     </Layout>
   );
